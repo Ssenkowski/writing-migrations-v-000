@@ -9,6 +9,7 @@ class CreateStudents < ActiveRecord::Migration
     )
   SQL
 
+  ActiveRecord::Base.connection.execute(sql)
 
   end
 
@@ -16,5 +17,4 @@ class CreateStudents < ActiveRecord::Migration
 
   end
 
-  ActiveRecord::Base.connection.execute(sql)
 end
